@@ -10,26 +10,39 @@
             font-family: Arial, sans-serif;
             background-color: #ffffff;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
         }
 
         .color-section {
-            width: 300px;
-            margin: 10px;
             text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
 
         .color-box {
-            margin: 20px;
-            /* margin-left: 20px; */
-            width: 100%;
+            width: 120px;
             height: 100px;
             border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #170e0d;
+            border: 1px solid #ccc;
+        }
+
+        .color-box.light {
+            border: 1px solid #ccc;
         }
 
         h2 {
@@ -39,18 +52,28 @@
 </head>
 
 <body>
+
     <div class="color-section">
         <h2>Primary Colors</h2>
-        <div class="color-box" style="background-color: #c78e97;">#c78e97</div>
-        <div class="color-box" style="background-color: #944b48;">#944b48</div>
+        <div class="color-container">
+            <div class="color-box" style="background-color: #c78e97;">#c78e97</div>
+            <div class="color-box" style="background-color: #944b48; color: white;">#944b48</div>
+        </div>
     </div>
 
     <div class="color-section">
         <h2>Secondary Colors</h2>
-        <div class="color-box" style="background-color: #a9886f;">#a9886f</div>
-        <div class="color-box" style="background-color: #d3c1b3;">#d3c1b3</div>
-        <div class="color-box" style="background-color: #f8f4e7;">#f8f4e7</div>
-        <div class="color-box" style="background-color: #170e0d; color: #fff">#170e0d</div>
+        <div class="color-container">
+            <div class="color-box" style="background-color: #a9886f;">#a9886f</div>
+            <div class="color-box" style="background-color: #d3c1b3;">#d3c1b3</div>
+            <div class="color-box" style="background-color: #f8f4e7;">#f8f4e7</div>
+            <div class="color-box" style="background-color: #170e0d; color: white;">#170e0d</div>
+            <div class="color-box" style="background-color: #ece7dc;">#ece7dc</div>
+            <div class="color-box" style="background-color: #cfb08d;">#cfb08d</div>
+            <div class="color-box light" style="background-color: #ffffff;">#ffffff</div>
+            <div class="color-box" style="background-color: #fdf8f3;">#fdf8f3</div>
+            <div class="color-box" style="background-color: #fbfaf6;">#fbfaf6</div>
+        </div>
     </div>
 
 </body>
